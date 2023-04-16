@@ -78,7 +78,7 @@ public class Exercises {
      * In each catch block, print a message that informs the user of the specific exception that was caught and why it occurred.
      *
      */
-    //TODO da rivedere
+
     private static void exercise4() {
         System.out.println("\nExercise 4: ");
         // Your code here
@@ -88,7 +88,7 @@ public class Exercises {
         try{
             System.out.println(num1/Double.parseDouble(num2AsString));
         } catch (NumberFormatException exception){
-            System.err.println();
+            System.err.println("the string does not have the appropriate format");
 
         } catch (Exception exception) {
             if ((num1 / Double.parseDouble(num2AsString) == (1/0))) {
